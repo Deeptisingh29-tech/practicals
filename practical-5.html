@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Map</title>
+    <style>
+      body {
+        background-color: #d3d3d3;
+      }
+    </style>
+  </head>
+  <body>
+    <img
+      src="menu.png"
+      alt="menu"
+      style="margin-left: auto; margin-right: auto; display: block; margin-top:20px; width: 70%;"
+      usemap="#menu"
+    />
+    <map name="menu">
+      <area shape="rect" coords="16,13,108,55" href="../index.html" alt="home" title="home">
+      <area shape="rect" coords="125,13,293,55" href="practical-1.html" alt="practical-1" title="practical-1">
+      <area shape="rect" coords="305,13,494,55" href="practical-2.html" alt="practical-2" title="practical-2">
+      <area shape="rect" coords="505,13,685,55" href="practical-3.html" alt="practical-3" title="practical-3">
+      <area shape="rect" coords="697,13,882,55" href="practical-4.html" alt="practical-4" title="practical-4">
+      <area shape="rect" coords="895,13,1072,55" href="#" alt="practical-5" title="practical-5">
+    </map>
+    <h1 style="color: white; text-align: center;">
+      Introduction to Front-End technologies
+    </h1>
+    <img
+      src="Practical-5 logo.jpg"
+      alt="Introduction"
+      style="margin-left: auto; margin-right: auto; display: block;"
+      usemap="#intro"
+    />
+    <map name="intro">
+      <area
+        shape="rect"
+        coords="19,9,172,166"
+        href="practical-5-html.html"
+        alt="Introduction"
+        title="Introduction to HTML"
+      />
+      <area
+        shape="circle"
+        coords="291,92,90"
+        href="practical-5-css.html"
+        alt="Introduction"
+        title="Introduction to CSS"
+      />
+      <area
+        shape="rect"
+        coords="24,196,171,338"
+        href="practical-5-js.html"
+        alt="Introduction"
+        title="Introduction to JavaScript"
+      />
+      <area
+        shape="poly"
+        coords="289,203,347,224,338,300,289,328,240,300,231,224"
+        href="practical-5-bootstrap.html"
+        alt="Introduction"
+        title="Introduction to Bootstrap"
+      />
+    </map>
+    
+    <div style="text-align: center; color: red; margin:10px;">
+      Click on any part of logo to know more about these technologies
+    </div>
+  </body>
+</html>
