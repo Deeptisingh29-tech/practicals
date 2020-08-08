@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Practical-7</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        #container {
+            width: 100%;
+            margin: 0px auto;
+            border: 5px lightgrey solid;
+            padding: 15px;
+        }
+
+        #header {
+            width: 100%;
+            height: 90px;
+            background-color:grey;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 40px;
+        }
+
+        #content {
+            margin-top: 15px;
+        }
+
+        #banner {
+            width: 100%;
+            height: 100vh;
+            background-color: lightblue;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 40px;
+        }
+
+        #section1 {
+            text-align: center;
+            margin-top: 15px;
+            font-size: 30px;
+        }
+
+        #circle_container {
+            margin: 15px;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-content: center;
+        }
+
+        .circle {
+            width: 250px;
+            height: 250px;
+            border-radius: 50%;
+            background-color: goldenrod;
+            margin: 10px 20px;
+        }
+
+        #section2 {
+            text-align: center;
+            margin-top: 15px;
+            font-size: 30px;
+        }
+
+        #section2::after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+
+        #left {
+            width: 50%;
+            float: left;
+            background-color: grey;
+            height: 380px;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 40px;
+            margin-top: 15px;
+        }
+
+        #right {
+            float: right;
+            width: 48%;
+            margin-top: 15px;
+            height: 380px;
+        }
+
+        .article {
+            width: 100%;
+            background-color: chocolate;
+            height: 120px;
+            margin-bottom: 10px;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 25x;
+        }
+
+        #section3 {
+            text-align: center;
+            margin-top: 15px;
+            font-size: 30px;
+        }
+
+        .box {
+            width: 20%;
+            height: 320px;
+            background-color: darkorange;
+            margin: 10px 20px;
+        }
+
+        #box_container {
+            margin: 15px;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-content: center;
+        }
+
+        #section4 {
+            text-align: center;
+            margin-top: 15px;
+            font-size: 30px;
+        }
+
+        #footer {
+            width: 100%;
+            height: 90px;
+            background-color: palevioletred;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 40x;
+            margin-top: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <div id="header">Header</div>
+        <div id="content">
+            <div id="banner">Banner</div>
+            <div id="section1">
+                <h3>Section-1</h3>
+                <div id="circle_container">
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                </div>
+            </div>
+            <div id="section2">
+                <h3>Section-2</h3>
+                <div id="left">Main Content</div>
+                <div id="right">
+                    <div class="article">Article-1</div>
+                    <div class="article">Article-2</div>
+                    <div class="article">Article-3</div>
+                </div>
+            </div>
+            <div id="section3">
+                <h3>Section-3</h3>
+                <div id="box_container">
+                    <div class="box" ></div>
+                    <div class="box" ></div>
+                    <div class="box" ></div>
+                    <div class="box" ></div>
+                </div>
+            </div>
+        </div>
+        <div id="section4">
+            <h3>Section-4</h3>
+            <div id="footer">Footer</div>
+        </div>
+        <a href="index.html">Back to Home</a>
+    </div>
+</body>
+
+</html>
