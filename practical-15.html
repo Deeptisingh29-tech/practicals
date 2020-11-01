@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practical-15</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        
+        body {
+            background-color: grey;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            margin-top: 30px;
+        }
+        
+        h1 {
+            font-size: 50px;
+            color: white;
+            margin-bottom: 20px;
+        }
+        
+        #container {
+            display: flex;
+            flex-direction: row;
+        }
+        
+        button {
+            display: block;
+            width: 40px;
+            height: 40px;
+            background-color: yellow;
+            outline: none;
+            font-size: 20px;
+            margin: 0 40px;
+        }
+        
+        #counter {
+            font-size: 40px;
+            color: yellow;
+            font-weight: bold;
+        }
+
+    </style>
+</head>
+
+<body>
+    <h1>COUNTER</h1>
+    <div id="container">
+        <button id="dec" onclick="dec()">-</button>
+        <div id="counter">0</div>
+        <button id="inc" onclick="inc()">+</button>
+    </div>
+    <script>
+        var countervalue = parseInt(document.getElementById("counter").innerHTML)
+        var btn1 = document.getElementById("dec");
+        btn1.disabled = true;
+
+        function dec() {
+            countervalue = countervalue - 1;
+            document.getElementById("counter").innerHTML = countervalue
+            if (countervalue == 0) {
+                btn1.disabled = true;
+            }
+        }
+
+        function inc() {
+            countervalue = countervalue + 1;
+            document.getElementById("counter").innerHTML = countervalue
+            btn1.disabled = false
+        }
+    </script>
+
+    <a href="index.html">Back To Home</a>
+</body>
+
+</html>
