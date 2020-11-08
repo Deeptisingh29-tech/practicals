@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practical-16</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+</head>
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    body {
+        min-height: 100vh;
+        min-width: 360px;
+        background-attachment: fixed;
+        background: linear-gradient(120deg, skyblue, blue);
+        
+    }
+    h1 {
+        color: white;
+        font-size: 40px;
+        text-align: center;
+        margin-top: 60px;
+    }
+    form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 30px 10px;
+    }
+    .input-todo {
+        width: 400px;
+        min-width: 200px;
+        height: 40px;
+        outline: none;
+        border: none;
+        border-radius: 10px;
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 0px;
+        padding: 15px;
+        font-size: 20px;
+        box-shadow: 4px 4px 4px black;
+    }
+    .btn-todo {
+        width: 50px;
+        height: 40px;
+        outline: none;
+        border: none;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+        font-size: 25px;
+        background-color: white;
+        color: blue;
+        box-shadow: 4px 4px 4px black;
+        cursor: pointer;
+    }
+    .btn-todo:hover {
+        background-color: skyblue;
+        color: white;
+    }
+
+    /*-----------New List container--------------------*/
+
+    .list-todo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        list-style: none;
+        margin: 50px;
+    }
+    .todo {
+        display: flex;
+        flex-direction: row;
+        margin: 10px 15px;
+        background-color: white;
+    }
+    .item-todo {
+        min-width: 200px;
+        padding: 8px;
+        font-size: 24px;
+    }
+    .todo button {
+        outline: none;
+        border: none;
+        width: 50px;
+        font-size: 25px;
+        text-align: center;
+        color: white;
+        cursor: pointer;
+    }
+    .check-btn {
+        background-color: yellowgreen;
+    }
+    .check-btn:hover {
+        background-color: green;
+    }
+    .del-btn {
+        background-color: #ff414d;
+    }
+    .del-btn:hover {
+        background-color: red;
+    }
+    .fa-check, 
+    .fa-trash {
+        pointer-events: none;
+    }
+    .completed {
+        text-decoration: line-through;
+        opacity: 0.8;
+    }
+    
+</style>
+<body>
+    <h1>Fullstack To-do List</h1><br>
+    <form>
+        <input type="text" class="input-todo" />
+        <button class="btn-todo">
+            <i class="fa fa-plus-square"></i>
+        </button>
+    </form>
+
+    <!-------------------For new to-do List------------------>
+    <div class="container-todo">
+        <ul class="list-todo"></ul>
+    </div>
+
+    <script src="../practicals/js/practical-16.js"></script>
+</body>
+</html>
