@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practical-17</title>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap" rel="stylesheet">
+</head>
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    body {
+        font-family: 'Quicksand', sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        color: black;
+        height: 100vh;
+        min-width: 430px;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+    
+    #time {
+        font-size: 7rem; /*8*16px*/
+    }
+    h1 {
+        margin-bottom: 16px;
+    }
+    h2 {
+        font-size: 3rem;
+        opacity: .5;
+    }
+    
+</style>
+<body>
+    <time id="time"></time>
+    <h1 id="greeting"></h1>
+    <h2 id="name" contenteditable="true" ></h2>
+    <h3 id="date"></h3>
+
+
+    <script src="../practicals/js/practical-17.js"></script>
+</body>
+</html>
