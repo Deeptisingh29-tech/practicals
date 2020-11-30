@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practical-18</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap" rel="stylesheet">
+</head>
+<style>
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #8db596;
+    font-family: 'Open Sans', sans-serif;
+    min-width: 222px;
+}
+
+.container {
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    width: 400px;
+}
+
+h1 {
+    text-align: center;
+    background-color: #fbf6f0;
+    padding: 10px;
+}
+
+.form-data {
+    padding: 10px 0px;
+    position: relative;
+}
+
+input,
+label {
+    display: block;
+    width: 100%;
+}
+
+label {
+    margin-bottom: 5px;
+}
+
+input {
+    padding: 5px;
+    border-radius: 4px;
+    outline: none;
+    border: 2px lightgrey solid;
+}
+
+.form-data i {
+    position: absolute;
+    top: 43px;
+    right: 10px;
+    display: none;
+}
+
+small {
+    visibility: hidden;
+}
+
+.form {
+    padding: 0px 20px;
+}
+
+.form button {
+    display: block;
+    width: 100%;
+    background-color: #8db596;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    margin: 20px 0px;
+}
+
+.form button:hover {
+    background-color: seagreen;
+}
+
+.form-data.success input {
+    border-color: green;
+}
+
+.form-data.success .fa-check-circle {
+    color: green;
+    display: block;
+}
+
+.form-data.error input {
+    border-color: red;
+}
+
+.form-data.error .fa-exclamation-circle {
+    color: red;
+    display: block;
+}
+
+.form-data.error small {
+    color: red;
+    visibility: visible;
+}
+</style>
+<body>
+    <div class="container">
+        <h1>Create Account</h1>
+        <form class="form" id="form">
+            <div class="form-data">
+                <label for="username">Username</label>
+                <input type="text" id="username" placeholder="Enter Username">
+                <i class="fa fa-check-circle" aria-hidden="true"></i>
+                <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+                <small>Error Msg</small>
+            </div>
+            <div class="form-data">
+                <label for="email">Email Id</label>
+                <input type="text" id="email" placeholder="Enter Email Id">
+                <i class="fa fa-check-circle" aria-hidden="true"></i>
+                <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+                <small>Error Msg</small>
+            </div>
+            <div class="form-data">
+                <label for="password1">Password</label>
+                <input type="password" id="password1" placeholder="Enter Password">
+                <i class="fa fa-check-circle" aria-hidden="true"></i>
+                <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+                <small>Error Msg</small>
+            </div>
+            <div class="form-data">
+                <label for="password2">Re-Enter Password</label>
+                <input type="password" id="password2" placeholder="Enter Password Again">
+                <i class="fa fa-check-circle" aria-hidden="true"></i>
+                <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+                <small>Error Msg</small>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+        <script src="../practicals/js/practical-18.js"></script>
+        <a href="index.html" style="float: left; color: seagreen;">Back To Home</a>
+    </div>
+    
+</body>
+
+</html>
